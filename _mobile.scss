@@ -1,0 +1,208 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+        &__menu {
+            display: none;
+        }
+        &__input {
+            display: none;
+        }
+        &__logo {
+            width: 99px;
+            padding-top: 32px;
+        }
+        &-mob {
+            padding-top: 32px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+    .top {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__header {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+        &__txt {
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .topcatalog {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__header {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+    }
+    .for-header {
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 32px;
+    }
+    .for {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+        &__item {
+            grid-column: 1 / -1;
+            font-size: 28px;
+            line-height: 34px;
+            height: 375px;
+            &_big {
+                height: 244px;
+            }
+        }
+    }
+    .main {
+        &__header {
+            font-size: 24px;
+            line-height: 29px;
+            padding-top: 32px;
+        }
+        &__link-1 {
+            display: none;
+        }
+        &__link-2 {
+            display: block;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            text-decoration-line: underline;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+    }
+    .product {
+        width: 100%;
+        &__header {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        &__content {
+            justify-content: flex-start;
+            gap: 100px;
+        }
+        &__form {
+            padding-top: 70px;
+        }
+    }
+    .filter {
+        flex-direction: column;
+        margin-top: 32px;
+        &__nav {
+            margin-bottom: 14px;
+        }
+        &__form {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+    }
+    .catalog-page {
+        grid-template-columns: 1fr;
+    }
+    .heading-big {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+    .cart {
+        margin-top: 92px;
+        gap: 0px;
+        &__name-box {
+            display: none;
+        }
+        &__item {
+            padding-top: 18px;
+            padding-bottom: 24px;
+        }
+        &__img {
+            display: none;
+        }
+        &__info {
+            gap: 8px;
+            &-header {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 15px;
+                padding-bottom: 7px;
+            }
+            &-price {
+                font-size: 12px;
+                line-height: 15px;
+                padding-bottom: 7px;
+            }
+        }
+        &__button {
+            margin-top: 8px;
+            margin-bottom: 48px;
+        }
+        &__btn-1 {
+            width: 166px;
+            font-size: 12px;
+            line-height: 15px;
+            font-family: inherit;
+        }
+        &__form {
+            width: 343px;
+        }
+    }
+    .offer {
+        row-gap: 32px;
+    }
+    .container {
+        width: 286.5px;
+        height: 910px;
+        left: 16px;
+        top: 150px;
+        .form {
+            width: 190.5px;
+            height: 830px;
+            flex-direction: column;
+            &__roomtype {
+                margin-bottom: 36px;
+            }
+            &__decor {
+                &_right {
+                    padding-top: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .topcatalog {
+        background-image: url(images/catalog_bcg_mini.jpeg);
+    }
+}

@@ -1,0 +1,290 @@
+/*элементы в footer*/
+.top {
+    height: 735px;
+    background-image: url(images/topback.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__header {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: left;
+        margin-top: 64px;
+        margin-bottom: 16px;
+        max-width: 792px;
+    }
+    &__txt {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    &__link {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+    }
+}
+
+.header {
+    height: 77px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    &__logo {
+        background-color: transparent;
+    }
+    &__input {
+        width: 288px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: inherit;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        &::placeholder {
+            color: rgb(255, 255, 255);
+        }
+    }
+    &-mob {
+        display: none;
+    }
+    &__menu {
+        line-height: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    &__link {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.for {
+    margin-top: 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    &-header {
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        text-align: left;
+        padding-top: 64px;
+    }
+    &__item {
+        height: 415px;
+        grid-column: span 4;
+        color: rgb(255, 255, 255);
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_big {
+            grid-column: span 6;
+        }
+        &_1 {
+            background-image: url(./images/for_relax.jpeg);
+        }
+        &_2 {
+            background-image: url(./images/for_work.jpeg);
+        }
+        &_3 {
+            background-image: url(./images/for_kitchen.jpeg);
+        }
+        &_4 {
+            background-image: url(./images/for_child.jpeg);
+        }
+        &_5 {
+            background-image: url(./images/for_bath.jpeg);
+        }
+    }
+}
+
+.main {
+    &__header {
+        color: rgb(0, 0, 0);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        text-align: left;
+        padding-top: 64px;
+    }
+    &__link {
+        display: block;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-decoration-line: underline;
+        margin-top: 32px;
+        margin-bottom: 64px;
+        &:hover {
+            color: #888888;
+            text-decoration-line: none;
+        }
+    }
+}
+
+.offer {
+    &__content {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 56px;
+    }
+}
+
+.catalog {
+    &__content {
+        margin-top: 32px;
+        margin-bottom: 39px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 33px;
+        row-gap: 56px;
+    }
+    &-page {
+        margin-bottom: 32px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 33px;
+        row-gap: 48px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 58px;
+    background: rgb(247, 246, 246);
+    &__logo {
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 129px;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    &__header {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+    }
+    &__link {
+        display: block;
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: left;
+    }
+    &__img {
+        fill: rgb(136, 136, 136);
+        transition: fill 1s;
+    }
+    &__link:hover &__img {
+        fill: black
+    }
+    &__messengers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__txt {
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__input {
+        height: 40px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        color: rgb(196, 196, 196);
+        padding-left: 17px;
+        padding-right: 17px;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+        &::placeholder {
+            color: #C4C4C4;
+        }
+    }
+    &__btn {
+        width: 260px;
+        height: 40px;
+        border-radius: 16px;
+        background: rgba(222, 215, 215, 0.41);
+        transition: background 1s;
+        border-color: transparent;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: center;
+        &:hover {
+            background: #000000;
+            color: #FFFFFF;
+        }
+    }
+}

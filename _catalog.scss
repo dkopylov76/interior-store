@@ -1,0 +1,135 @@
+.topcatalog {
+    height: 400px;
+    background-image: url(images/catalog_bcg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__header {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        margin-top: 127px;
+        margin-bottom: 126px;
+        width: 270px;
+    }
+}
+.filter {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 61px;
+    margin-bottom: 36px;
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-link {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__btn {
+        width: 182px;
+        height: 40px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+        padding-left: 23px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        background: transparent;
+        background-image: url(images/triag.png);
+        background-repeat: no-repeat;
+        background-position: center right 22px;
+    }
+    &__select {
+        width: 227px;
+        height: 40px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+        padding-left: 23px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        appearance: none;
+        background: transparent;
+        background-image: url(images/triag.png);
+        background-repeat: no-repeat;
+        background-position: center right 22px;
+    }
+}
+
+.product {
+    position: relative;
+    width: 378px;
+    display: grid;
+    justify-self: start;
+    &__icon {
+        position: absolute;
+        display: none;
+        filter: drop-shadow(0px 0px 3px black);
+    }
+    &:hover &__icon {
+        display: flex;
+        justify-self: end;
+        align-items: baseline;
+        gap: 21px;
+        padding-top: 11px;
+        padding-right: 12px;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__header {
+        margin-top: 10px;
+        margin-bottom: 9px;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+    }
+    &__descr {
+        margin-bottom: 12px;
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+    }
+    &__box-price {
+        display: flex;
+        gap: 32px;
+    }
+    &__price {
+        color: rgb(5, 5, 5);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+        &_sale {
+            color: rgb(136, 136, 136);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            text-align: left;
+            text-decoration-line: line-through;
+        }
+    }
+}

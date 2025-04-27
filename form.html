@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container center">
+        <div class="container-button-wrapper">
+            <button class="container__btn">Фильтрация</button>
+            <div class="form">
+                <form class="form__decor form__decor_left">
+                    <fieldset class="form__delivery">
+                        <legend class="form__header">Сроки доставки</legend>
+                        <div>
+                            <input type="radio" id="delivery_1" name="delivery">
+                            <label for="delivery_1" class="form__text">Неважно</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="delivery_2" name="delivery">
+                            <label for="delivery_2" class="form__text">Сегодня</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="delivery_3" name="delivery">
+                            <label for="delivery_3" class="form__text">Завтра</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="delivery_4" name="delivery">
+                            <label for="delivery_4" class="form__text">До 3 дней</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="delivery_5" name="delivery">
+                            <label for="delivery_5" class="form__text">До 7 дней</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__price">
+                        <legend class="form__header">Цена</legend>
+                        <div class="form__price-text">
+                            <div class="form__price-text-fr">
+                                <p class="form__text">от</p>
+                                <p class="form__text">0 руб.</p>
+                            </div>
+                            <div class="form__price-text-to">
+                                <p class="form__text">до</p>
+                                <p class="form__text">100000 руб.</p>
+                            </div>
+                        </div>
+                        <div class="form__price-range">
+                            <input type="range" min="1" max="100000" value="1" name="range" step="1">
+                            <input type="range" min="1" max="100000" value="100000" name="range" step="1">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__color">
+                            <legend class="form__header">Цвет</legend>
+                            <div class="form__color-1">
+                                <input type="checkbox" id="color_1" name="color">
+                                <label for="color_1"></label>
+                            </div>
+                            <div class="form__color-2">
+                                <input type="checkbox" id="color_2" name="color">
+                                <label for="color_2"></label>
+                            </div>
+                            <div class="form__color-3">
+                                <input type="checkbox" id="color_3" name="color">
+                                <label for="color_3"></label>
+                            </div>
+                            <div class="form__color-4">
+                                <input type="checkbox" id="color_4" name="color">
+                                <label for="color_4"></label>
+                            </div>
+                            <div class="form__color-5">
+                                <input type="checkbox" id="color_5" name="color">
+                                <label for="color_5"></label>
+                            </div>
+                            <div class="form__color-6">
+                                <input type="checkbox" id="color_6" name="color">
+                                <label for="color_6"></label>
+                            </div>
+                            <div class="form__color-7">
+                                <input type="checkbox" id="color_7" name="color">
+                                <label for="color_7"></label>
+                            </div>
+                            <div class="form__color-8">
+                                <input type="checkbox" id="color_8" name="color">
+                                <label for="color_8"></label>
+                            </div>
+                            <div class="form__color-9">
+                                <input type="checkbox" id="color_9" name="color">
+                                <label for="color_9"></label>
+                            </div>
+                            <div class="form__color-10">
+                                <input type="checkbox" id="color_10" name="color">
+                                <label for="color_10"></label>
+                            </div>
+                            <div class="form__color-11">
+                                <input type="checkbox" id="color_11" name="color">
+                                <label for="color_11"></label>
+                            </div>
+                            <div class="form__color-12">
+                                <input type="checkbox" id="color_12" name="color">
+                                <label for="color_12"></label>
+                            </div>
+                            <div class="form__color-13">
+                                <input type="checkbox" id="color_13" name="color">
+                                <label for="color_13"></label>
+                            </div>
+                            <div class="form__color-14">
+                                <input type="checkbox" id="color_14" name="color">
+                                <label for="color_14"></label>
+                            </div>
+                    </fieldset>
+                </form>
+                <form class="form__decor form__decor_right">
+                    <fieldset class="form__roomtype">
+                        <legend class="form__header">Тип комнаты</legend>
+                        <input type="checkbox" id="roomtype_1" name="roomtype"><label for="roomtype_1" class="form__text">Кухня и столовая</label>
+                        <input type="checkbox" id="roomtype_2" name="roomtype"><label for="roomtype_2" class="form__text">Ванная комната</label>
+                        <input type="checkbox" id="roomtype_3" name="roomtype"><label for="roomtype_3" class="form__text">Детская комната</label>
+                        <input type="checkbox" id="roomtype_4" name="roomtype"><label for="roomtype_4" class="form__text">Домашний офис</label>
+                        <input type="checkbox" id="roomtype_5" name="roomtype"><label for="roomtype_5" class="form__text">Гостиная</label>
+                        <input type="checkbox" id="roomtype_6" name="roomtype"><label for="roomtype_6" class="form__text">Прихожая</label>
+                        <input type="checkbox" id="roomtype_7" name="roomtype"><label for="roomtype_7" class="form__text">Спальня</label>
+                        <input type="checkbox" id="roomtype_8" name="roomtype"><label for="roomtype_8" class="form__text">Гардероб</label>
+                        <input type="checkbox" id="roomtype_9" name="roomtype"><label for="roomtype_9" class="form__text">Дача</label>
+                        <input type="checkbox" id="roomtype_10" name="roomtype"><label for="roomtype_10" class="form__text">Свет</label>
+                    </fieldset>
+                    <button class="form__btn">Применить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

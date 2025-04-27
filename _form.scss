@@ -1,0 +1,344 @@
+.container {
+    position: absolute;
+    z-index: 100;
+    left: 540px;
+    top: 54px;
+    width: 541.5px;
+    height: 548px;
+    &-button-wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__btn {
+        width: 182px;
+        height: 40px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+        padding-left: 23px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        background: transparent;
+        background-image: url(images/triag.png);
+        background-repeat: no-repeat;
+        background-position: center right 22px;
+    }
+.form {
+    position: absolute;
+    width: 445.5px;
+    height: 468px;
+    padding: 40px 48px 40px 48px;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    &__header {
+        width: 189px;
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 14px;
+    }
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__decor {
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        &_left {
+            gap: 32px;
+        }
+        &_right {
+            justify-content: space-between;
+        }
+    }
+    &__delivery {
+        width: 189px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        border: transparent;
+    }
+    &__price {
+        width: 189px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        border: transparent;
+        &-text {
+            width: 189px;
+            display: flex;
+            gap: 14px;
+            &-fr {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+            }
+            &-to {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+            }
+        }
+        &-range {
+            position: relative;
+            width: 190px;
+            height: 8px;
+        }
+    }
+    &__color {
+        width: 189px;
+        display: flex;
+        border: transparent;
+        flex-wrap: wrap;
+        gap: 14px;
+        &-1 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(255, 255, 255);
+            width: 15px;
+            height: 15px;
+        }
+        &-2 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(0, 0, 0);
+            width: 15px;
+            height: 15px;
+        }
+        &-3 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(115, 115, 115);
+            width: 15px;
+            height: 15px;
+        }
+        &-4 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(255, 0, 0);
+            width: 15px;
+            height: 15px;
+        }
+        &-5 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(255, 122, 65);
+            width: 15px;
+            height: 15px;
+        }
+        &-6 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(242, 203, 1);
+            width: 15px;
+            height: 15px;
+        }
+        &-7 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(0, 191, 42);
+            width: 15px;
+            height: 15px;
+        }
+        &-8 {
+            box-sizing: border-box;
+            border-color: rgb(28, 204, 151);
+            background: rgb(28, 204, 151);
+            width: 15px;
+            height: 15px;
+        }
+        &-9 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(0, 159, 227);
+            width: 15px;
+            height: 15px;
+        }
+        &-10 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(0, 10, 248);
+            width: 15px;
+            height: 15px;
+        }
+        &-11 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(103, 16, 214);
+            width: 15px;
+            height: 15px;
+        }
+        &-12 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(157, 13, 181);
+            width: 15px;
+            height: 15px;
+        }
+        &-13 {
+            box-sizing: border-box;
+            border-color: transparent;
+            background: rgb(216, 154, 255);
+            width: 15px;
+            height: 15px;
+        }
+        &-14 {
+            box-sizing: border-box;
+            border-color: rgb(255, 101, 166);
+            background: rgb(255, 101, 166);
+            width: 15px;
+            height: 15px;
+        }
+    }
+    &__roomtype {
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        border: transparent;
+    }
+    &__btn {
+        width: 190px;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: inherit;
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 29px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+}
+
+input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    background-image: url(images/ok.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 29px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background-image: url(images/ok.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="checkbox"]:checked + label[for="color_2"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background-image: url(images/ok_w.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    position: absolute;
+    width: 189px;
+    height: 0;
+    left: 0.39px;
+    top: 4px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+}
